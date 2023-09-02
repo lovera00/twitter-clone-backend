@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b5d73d-8a21-40e1-8139-2bc0776479e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hashtag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HashtagTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Reply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReplyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TweetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TweetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hashtag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hashtag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.All in twitter-clone-backend">
     <configuration name="All in twitter-clone-backend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="twitter-clone-backend" />
@@ -135,13 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693626715524</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Modelado de Hashtag">
+      <created>1693679459295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693679459295</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="Add tweet tests" />
     <MESSAGE value="Add 5 use cases for post a tweet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 5 use cases for post a tweet" />
+    <MESSAGE value="Modelado de Hashtag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modelado de Hashtag" />
   </component>
 </project>

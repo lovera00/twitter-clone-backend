@@ -15,6 +15,4 @@ public class Hashtag {
     public UUID getId() {
         return this.id;
     }
-
-    // Otros métodos y lógica de negocio aquí
 }

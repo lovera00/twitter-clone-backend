@@ -1,0 +1,25 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import java.util.UUID;
+
+public class ReplyTest {
+    String tweetWithTooMuchCharacter = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+    @Test
+    public void testReplyShouldHaveValidContent() {
+        assertThrows(IllegalArgumentException.class, () -> new Reply("", UUID.randomUUID(), UUID.randomUUID()));
+        assertThrows(IllegalArgumentException.class, () -> new Reply(tweetWithTooMuchCharacter, UUID.randomUUID(), UUID.randomUUID()));
+    }
+
+    @Test
+    public void testReplyShouldUpdateContent() {
+        Reply reply = new Reply("Initial content", UUID.randomUUID(), UUID.randomUUID());
+        reply.updateContent("Updated content");
+        assertEquals("Updated content", reply.getContent());
+    }
+
+    @Test
+    public void testReplyShouldBeDeleted() {
+        Reply reply = new Reply("Initial content", UUID.randomUUID(), UUID.randomUUID());
+        assertTrue(reply.delete()); // Este método podría devolver un booleano para confirmar la eliminación
+    }
+}
