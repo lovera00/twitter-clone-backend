@@ -12,4 +12,10 @@ public class ProfileTest {
     public void testUsernameShuldHaveLessTenCharacteres(){
         assertThrows(IllegalArgumentException.class, () -> new Profile("aaaaaaaaaaa", "John Doe"));
     }
+    @Test
+    public void testProfileShouldUpdateFullName() {
+        Profile profile = new Profile("john123", "John Doe");
+        profile.updateFullName("John M. Doe");
+        assertEquals("John M. Doe", profile.getFullName());
+    }
 }

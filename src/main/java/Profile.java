@@ -17,4 +17,12 @@ public class Profile {
         this.username = username;
         this.fullName = fullName;
     }
+
+    public void updateFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getFullName() {
+        return this.fullName;
+    }
 }
