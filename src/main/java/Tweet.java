@@ -32,4 +32,17 @@ public class Tweet {
     public Date getUpdatedAt() {
         return this.updatedAt;
     }
+
+    public void updateContent(String newContent) {
+        if (newContent.isEmpty() || newContent.length() > 280) {
+            throw new IllegalArgumentException("El contenido del tweet debe tener entre 1 y 280 caracteres.");
+        }
+
+        this.content = newContent;
+        this.updatedAt = new Timestamp(new Date().getTime());
+    }
+
+    public String getContent() {
+        return this.content;
+    }
 }

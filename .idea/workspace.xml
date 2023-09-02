@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b5d73d-8a21-40e1-8139-2bc0776479e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Tweet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TweetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TweetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TweetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +110,19 @@
       <option name="project" value="LOCAL" />
       <updated>1693615671718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add tweet tests">
+      <created>1693626327465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693626327465</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Add tweet tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tweet tests" />
   </component>
 </project>
