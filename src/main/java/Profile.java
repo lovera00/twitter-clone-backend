@@ -9,6 +9,9 @@ public class Profile {
         if (username.length() < 3) {
             throw new IllegalArgumentException("El nombre de usuario debe tener al menos 3 caracteres.");
         }
+        if (username.length() > 10) {
+            throw new IllegalArgumentException("El nombre de usuario no puede tener mas de 10 caracteres");
+        }
 
         this.id = UUID.randomUUID();
         this.username = username;
