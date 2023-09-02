@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -8,6 +10,8 @@ public class Tweet {
     private final UUID profileId;
     private final Timestamp createdAt;
     private Timestamp updatedAt;
+
+    private List<Hashtag> hashtags = new ArrayList<>();
 
     public Tweet(String content, UUID profileId) {
         if (content.isEmpty() || content.length() > 140) {
@@ -44,5 +48,13 @@ public class Tweet {
 
     public String getContent() {
         return this.content;
+    }
+
+    public void addHashtag(Hashtag hashtag) {
+        this.hashtags.add(hashtag);
+    }
+
+    public List<Hashtag> getHashtags() {
+        return this.hashtags;
     }
 }
