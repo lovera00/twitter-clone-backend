@@ -15,7 +15,15 @@ public class Reply {
         this.userId = userId;
         this.tweetId = tweetId;
     }
-
+    public UUID getId(){
+        return this.id;
+    }
+    public UUID getUserId(){
+        return this.userId;
+    }
+    public UUID getTweetId(){
+        return this.tweetId;
+    }
     public void updateContent(String newContent) {
         if (newContent.isEmpty() || newContent.length() > 140) {
             throw new IllegalArgumentException("El nuevo contenido de la respuesta debe tener entre 1 y 140 caracteres.");
@@ -32,6 +40,4 @@ public class Reply {
     public String getContent() {
         return this.content;
     }
-
-    // Otros métodos y lógica de negocio aquí
 }

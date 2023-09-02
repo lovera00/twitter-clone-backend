@@ -15,17 +15,18 @@ public class Bookmark {
         this.createdAt = new Timestamp(new Date().getTime());
     }
 
+    public UUID getId(){
+        return this.id;
+    }
     public UUID getUserId() {
-        return userId;
+        return this.userId;
     }
 
     public UUID getTweetId() {
-        return tweetId;
+        return this.tweetId;
     }
 
     public Timestamp getCreatedAt() {
-        return createdAt;
+        return this.createdAt;
     }
-
-    // Otros métodos y lógica de negocio aquí
 }

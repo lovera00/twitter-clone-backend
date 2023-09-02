@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92b5d73d-8a21-40e1-8139-2bc0776479e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bookmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Like.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BookmarkTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LikeTest.java" afterDir="false" />
+    <list default="true" id="92b5d73d-8a21-40e1-8139-2bc0776479e4" name="Changes" comment="Remove Comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bookmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reply.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693685831616</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modelado de Like y de Bookmark">
+      <created>1693686332232</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693686332232</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +168,8 @@
     <MESSAGE value="Add 5 use cases for post a tweet" />
     <MESSAGE value="Modelado de Hashtag" />
     <MESSAGE value="Modelado de Respuesta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modelado de Respuesta" />
+    <MESSAGE value="Modelado de Like y de Bookmark" />
+    <MESSAGE value="Remove Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Comments" />
   </component>
 </project>
